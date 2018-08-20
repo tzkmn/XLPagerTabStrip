@@ -102,6 +102,10 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
         containerView.showsVerticalScrollIndicator = false
         containerView.showsHorizontalScrollIndicator = false
         containerView.isPagingEnabled = true
+        
+        // - Check List ViewControllers Is Not Empty
+        guard !viewControllers.isEmpty else { return }
+        
         reloadViewControllers()
 
         let childController = viewControllers[currentIndex]
