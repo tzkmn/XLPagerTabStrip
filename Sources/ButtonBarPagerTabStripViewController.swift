@@ -143,7 +143,7 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
         // MFCoupon: Custom Bottom Line View
         if settings.style.buttonBarViewIsShowBottomLineView {
             let buttonBarHeight = settings.style.buttonBarHeight ?? 44
-            let bottomLineRect = CGRect(x: 0, y: buttonBarHeight - 1, width: view.frame.size.width, height: 0.5)
+            let bottomLineRect = CGRect(x: 0, y: buttonBarHeight + 0.1, width: view.frame.size.width, height: 0.5)
             let bottomLineView = UIView(frame: bottomLineRect)
             let borderColor = settings.style.buttonBarViewColorOfBottomLineView ?? UIColor(red: 220.0 / 255.0, green: 221.0 / 255.0, blue: 224.0 / 255.0, alpha: 1.0)
             bottomLineView.backgroundColor = borderColor
